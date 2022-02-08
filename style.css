@@ -1,0 +1,359 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+body{
+    padding: 0 2%;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #000;
+}
+/* NAV */
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    background-color: #000;
+    color: #fff;
+    top: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav .profile{
+    display: flex;
+    align-items: center;
+}
+
+nav .profile img{
+     width: 60px;
+     height: 60px;
+     border-radius: 50px;
+}
+
+nav .profile h1{
+    margin-left: 19px;
+    font-size: 15px;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+  
+
+}
+
+nav ul li{
+
+    margin-left: 40px;
+    cursor: pointer;
+    border-bottom: 1px solid #000;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li:hover{
+    border-bottom-color: white;
+}
+
+.notre-page {
+    margin: 4%;
+}
+
+.notre-page header {
+    background-image: url("./images/dev1.jpg") ;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 50%;
+    margin-top:5% ;
+    max-width: 100%;
+ }
+ 
+.titre{
+    max-width: 50%;
+} 
+
+.notre-page header h1 {
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;/* transformé le text en MAJ*/
+    font-family: 'Poppins', sans-serif;
+    font-size: 4vw;
+   /* margin-left: 100px; */
+}
+h2{
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;/* transformé le text en MAJ*/
+    font-family: 'Poppins', sans-serif;
+    font-size: 2vw;
+    margin: 20px 20px 40px 20px; 
+}
+span{
+    color: rgb(29, 21, 182);
+}
+
+.notre-page header p{
+    text-align: justify;
+    line-height: 30px;
+    color: rgb(29, 21, 182);
+}
+
+.notre-page header .button{
+   background-color: rgb(29, 21, 182);
+   padding: 10px 18px;
+   text-decoration: none;
+   font-weight: bold;
+   color: #fff;
+   display: inline-block;
+   margin: 30px 0;
+   border-radius:5px ;
+    cursor: pointer;
+
+}
+.notre-page header button:hover{
+        color: #ccc;
+        border-bottom-color:#0000 ;
+}
+
+.notre-page .partie-image img {
+    width: 100%;
+    height: 500px;
+    margin-top: 15%;
+    transition: filter 0.5s;
+
+}
+.notre-page .partie-image img:hover{
+    filter: brightness(50%);
+}
+
+.notre-page .section-parcours{
+     margin-top: 6%;
+
+}
+
+.notre-page .section-parcours h1{
+    font-family: 'Poppins', sans-serif;
+    font-style:oblique;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+  
+    
+}
+
+
+.notre-page .section-parcours .projects{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     color: #fff;
+   
+}
+
+.notre-page .section-parcours .projects .project{
+    margin-right: 20px;
+    max-width:200px ;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    padding: 15px;
+    margin: 40px;
+   background-image: url(./images/bagck-div.jpg) ;
+  
+}
+.notre-page .section-parcours .projects .project h4{
+      margin: 0;
+      text-transform: uppercase;
+}
+
+.notre-page .section-parcours .projects .project .description{
+    font-size: 13px;
+}              
+.notre-page .section-parcours .projects .project .dates{
+    font-size: 13px;
+    color: rgb(145,145,145);
+}
+
+
+/* skills */
+
+div .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    background: -webkit-linear-gradient(left,#a445b2, #fa4299);
+}
+.wrapper{
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: space-between;
+
+}
+.wrapper .card{
+width: calc(100% /5 - 20px);
+background: rgb(156, 155, 155);
+height: 300px;
+border-radius: 5px;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+flex-direction: column;
+}
+.wrapper .card .circle{
+position: relative;
+height: 150px;
+width: 150px;
+/* border: 8px solid #fa4299; */
+border-radius: 50%;
+cursor: default;
+}
+.card .circle .box ,
+.card .circle .box span{
+position: absolute;
+top: 50%;
+left: 50%;
+
+}
+.card .circle .box{
+height: 100%;
+width: 100%;
+background-color: blue;
+transform: translate(-50%,-50%) scale(0.8);
+border-radius: 50%;
+transition: all 0.2s;
+}
+.card .circle:hover .box{
+transform: translate(-50%,-50%) scale(0.91);
+}
+.card .circle .box span ,
+.wrapper .card .text{
+background: -webkit-linear-gradient(left,#a445b2, #fa4299);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+
+}
+.card .circle .box span{
+font-size:30px ;
+font-weight: 600;
+font-family: sans-serif;
+transform: translate(-45%, -50%); 
+transition: all 0.1s;
+}
+
+.card .circle:hover .box span{
+transform: translate(-45%,-50%) scale(1.09);
+}
+.card .text{
+font-size: 20px;
+font-weight: 600;
+}
+
+/* contact */
+form{
+    width: 50%;
+}
+
+label{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(29, 21, 182)0;
+}
+
+legend{
+    color: white;
+}
+
+fieldset{
+    align-items: center;
+    width: 50%;
+}
+
+div .contact{
+    display: flex;
+    justify-content:space-around;
+}
+
+
+/******************* footer */
+
+
+footer{
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+   justify-content:space-around;
+   background-color: rgb(5, 5, 5);
+   color: white;
+}
+
+footer  .colonne p{
+    font-size: 12px;
+   color: #ccc;
+   cursor: pointer;
+}
+footer  .colonne p:hover{
+    color: aqua;
+}
+
+
+/* les format media */
+ @media screen and (max-width: 700px) {
+    nav{
+        justify-content: center;
+    }
+    nav ul {
+        display: none;
+    }
+    
+.notre-page header h1 {
+    width: calc(50%-20px);
+}  
+section .partie-image img {
+    width: calc(50%-20px);;
+}
+
+    .notre-page header{
+        margin-top: 10%;
+        max-width: 100%;
+    }
+
+    .notre-page .section-parcours {
+        margin-top: 15%;
+    }
+    .notre-page .section-parcours h1{
+        font-size: 1.5em;
+    }
+    .notre-page .section-parcours .projects .project{
+        margin-right: 0;
+        margin-bottom: 20px;
+        max-width: 100%;
+    }
+    footer {
+		justify-content: flex-start;
+	}
+	footer .column {
+		width: 80%;
+	}
+    
+    .wrapper{
+        width: 100%;
+        
+    }
+   .wrapper .card{
+       width: calc(100% /3 - 20px);
+      margin-bottom:20px ;
+   }
+}
+
+
+
